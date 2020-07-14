@@ -11,6 +11,7 @@ public class ReservationEventHandler {
 		LoggerFactory.getLogger(ReservationEventHandler.class);
 
 	
+	
 	@RabbitHandler
 	public void receive(String in) {
 		System.out.println(in);

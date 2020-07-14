@@ -7,7 +7,8 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 
 @RabbitListener(queues = "city-reservation-q1")
 public class ReservationEventHandler {
-	private static final Logger log = LoggerFactory.getLogger(ReservationEventHandler.class);
+	private static final Logger log = 	
+		LoggerFactory.getLogger(ReservationEventHandler.class);
 
 	
 	@RabbitHandler

@@ -9,6 +9,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 public class ReservationEventHandler {
 	private static final Logger log = LoggerFactory.getLogger(ReservationEventHandler.class);
 
+	
 	@RabbitHandler
 	public void receive(String in) {
 		System.out.println(in);
